@@ -6,11 +6,12 @@ interface Props {
     speedFactor?: number;
     backgroundColor?: string;
     starCount?: number;
-    modalIsOpen?: boolean
+    modalIsOpen?: boolean,
+    starColor?: any
 }
 
 export default function Starfield(props: Props) {
-    const { speedFactor = 0.05, backgroundColor = 'black', starCount = 5000, modalIsOpen = false } = props;
+    const { speedFactor = 0.05, backgroundColor = 'black', starCount = 5000, modalIsOpen = false, starColor={[255, 255, 255]} } = props;
 
     useEffect(() => {
         const canvas = document.getElementById('starfield') as HTMLCanvasElement;

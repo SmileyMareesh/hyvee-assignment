@@ -61,7 +61,7 @@ const GuessDetails: React.FC = () => {
       <div className="absolute inset-0 bg-gray-900 bg-opacity-50 min-h-screen flex items-center justify-center text-white font-serif">
         <div className="bg-white p-8 rounded-lg shadow-lg">
           <h1 className="text-2xl font-bold mb-4 text-gray-900">
-            Let's start with your name
+            {"Let's start with your name"}
           </h1>
           <form onSubmit={handleSubmit}>
             <input
