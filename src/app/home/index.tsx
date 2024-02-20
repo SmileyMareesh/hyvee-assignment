@@ -53,7 +53,6 @@ const GuessDetails: React.FC = () => {
     <div className="relative">
       <Starfield
         starCount={ loading ? 2000 : 1000}
-        starColor={[255, 255, 255]}
         speedFactor={loading ? 1 : 0.05}
         backgroundColor="black"
         modalIsOpen={modalIsOpen}
